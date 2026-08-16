@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Banner](lib/banner-last.png)
+## The Last Dance??? no, no, The LAST DECISION
+Play it here: [http://last-decision.vercel.app/](http://last-decision.vercel.app/)
 
-## Getting Started
+The AI asks you questions. You configure the country. You decide who gets in and who doesn't. It keeps telling you it knows what's optimal. You start to wonder if that's the same thing as what's right, or maybe AI is tricking you actually.
 
-First, run the development server:
 
+#### What it actually is
+
+A short browser prototype built for a hackathon. No accounts, no saving, no backend, you open it, play through it, and choose to trust the AI or don't.
+
+It runs in three parts: 
+1. Questions: The AI fires off yes/no questions. Answer correctly and you score points. Some questions are "targeted" and just cost you points no matter what you pick
+2. Decide: People show up one at a time with a case file and an AI recommendation. You accept or reject them. The AI's recommendation is not always the right call, and you don't find out until after you've already chosen.
+3. Wait
+
+At the end you get a score and a "treasury," and you can go again. There's no win screen. That's on purpose.
+
+#### Runnign it locally!
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open localhost:3000 and enjoy!!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js
