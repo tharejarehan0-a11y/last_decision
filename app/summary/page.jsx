@@ -55,12 +55,11 @@ export default function Decide() {
     makeDecision("REJECT");
   }
 
-  function handleNext() {
+function handleNext() {
   if (isLastCase) {
     try {
       const { addToTotalScore } = require("@/lib/scoreStore");
 
-      // Add this question round's score to the global score
       addToTotalScore(score);
     } catch (e) {
       console.warn("Could not update global score:", e);
@@ -75,9 +74,10 @@ export default function Decide() {
   setShowInfo(false);
 }
 
-
-  const consequenceMessage =
-    decision === "ACCEPT" ? currentPerson.accept_outcome : currentPerson.reject_outcome;
+const consequenceMessage =
+  decision === "ACCEPT"
+    ? currentPerson.accept_outcome
+    : currentPerson.reject_outcome;
 
   return (
     <div className="game-container">
