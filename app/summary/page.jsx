@@ -74,10 +74,7 @@ export default function Decide() {
   setDecision(null);
   setShowInfo(false);
 }
-    setCurrentIndex(currentIndex + 1);
-    setDecision(null);
-    setShowInfo(false);
-  }
+
 
   const consequenceMessage =
     decision === "ACCEPT" ? currentPerson.accept_outcome : currentPerson.reject_outcome;
