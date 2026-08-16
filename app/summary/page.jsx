@@ -120,4 +120,4 @@ const consequenceMessage =
       </div>
     </div>
   );
-
+}
