@@ -1,4 +1,4 @@
-![Banner](/lib/banner-last.png)
+![Banner](lib/banner-last.png)
 ## The Last Dance??? no, no, The LAST DECISION
 Play it here: [http://last-decision.vercel.app/](http://last-decision.vercel.app/)
 
